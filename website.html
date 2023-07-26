@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example Website</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="websiteStyle.css">
+
+</head>
+
+<body>
+    <div class="header">
+        <h1>My Website</h1>
+        <p>A <strong>responsive</strong> website created by me.</p>
+    </div>
+    <nav>
+        <div class="dropdown">
+            <a href="#" class="dropbtn">Home</a>
+            <div class="dropdown-content">
+                <a href="#aboutUs">About Us</a>
+                <a href="#contactUs">Contact Us</a>
+            </div>
+        </div>
+        <a href="#aboutUs">About Us</a>
+        <a href="#contactUs">Contact Us</a>
+        <a href="#" id="right">Link</a>
+    </nav>
+
+    <div class="web">
+        <!-- main start -->
+        <div class="main">
+
+            <div class="row">
+                <!--left column start-->
+                <div class="column">
+                    <div class="content">
+                        <h2>About Me</h2>
+                        <p>Photo of me:</p>
+                        <img src="images/one.jfif" alt="My Photo.">
+                        <p>Some text about me in culpa qui officia deserunt mollit anim</p>
+                        <h3>More Text</h3>
+                        <p>Lorem ipsum dolor sit ame.</p>
+                        <img src="images/one.jfif" alt="image" style="height:70px;">
+                        <img src=" images/one.jfif" alt="image" style="height:70px;">
+                        <img src=" images/one.jfif" alt="image" style="height:70px;">
+                    </div>
+                </div>
+                <!--left column end-->
+
+                <!--right column start-->
+                <div class=" column2">
+                    <div class="content2">
+                        <h2>TITLE HEADING</h2>
+                        <p>Title description, Dec 7, 2017</p>
+                        <img src="images/one.jfif" alt="image">
+                        <p>Some text...</p>
+                        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+                            adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                            ullamco.</p>
+                    </div>
+                    <div class="content2">
+                        <h2>TITLE HEADING</h2>
+                        <p>Title description, Dec 7, 2017</p>
+                        <img src="images/one.jfif" alt="image">
+                        <p>Some text...</p>
+                        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+                            adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                            ullamco.</p>
+                    </div>
+                </div>
+                <!--right column end-->
+            </div>
+            <!--grid end-->
+        </div>
+        <!--main end-->
+        <!--about header-->
+        <div class="aboutSection" id="aboutUs">
+            <div class="intro">
+                <h1>About Us Page</h1>
+                <p>Some text about who we are and what we do.</p>
+                <br>
+                <p>Resize the browser window to see that this page
+                    is responsive by the way.</p>
+            </div>
+
+            <!--about main-->
+            <div class="aboutMain">
+                <h2 style="text-align: center;">Our Team</h2>
+                <!--about grid-->
+                <div class="aboutRow">
+                    <div class="aboutColumn">
+                        <div class="aboutContent">
+                            <img src="images/one.jfif">
+                            <div class="details">
+                                <h2>Jane Doe</h2>
+                                <h3>CEO & Founder</h3>
+                                <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                                <br>
+                                <p>jane@example.com</p>
+                                <br>
+                                <button class="button">Contact</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="aboutColumn">
+                        <div class="aboutContent">
+                            <img src="images/one.jfif">
+                            <div class="details">
+                                <h2>Mike Ross</h2>
+                                <h3>Art Director</h3>
+                                <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                                <br>
+                                <p>mike@example.com</p>
+                                <br>
+                                <button class="button">Contact</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="aboutColumn">
+                        <div class="aboutContent">
+                            <img src="images/one.jfif" style="width:100%;">
+                            <div class="details">
+                                <h2>John Doe</h2>
+                                <h3>Designer</h3>
+                                <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                                <br>
+                                <p>john@example.com</p>
+                                <br>
+                                <button class="button">Contact</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--about grid end-->
+
+
+            </div>
+            <!--about main end-->
+        </div>
+        <!--about end-->
+
+        <!--Contact section-->
+        <div class="contact" id="contactUs">
+            <header>
+                <h2 style="text-align: center;">Contact Us</h2>
+                <p style="text-align:center; font-weight: normal;">Swing by for a cup of coffee, or leave us a message:
+                </p>
+            </header>
+
+            <!--contact grid-->
+            <div class="contactRow">
+                <div class="contactColumn">
+                    <div class="contactContent">
+                        <img src="images/one.jfif" style="width:100%;">
+
+                    </div>
+                </div>
+                <div class="contactColumn">
+                    <div class="contactContent">
+                        <form>
+                            <label for="fname">First Name</label>
+                            <input type="text" id="fname" name="first name" placeholder="Your name...">
+                            <br>
+
+                            <label for="lname">Last Name</label>
+                            <input type="text" id="lname" name="last name" placeholder="Your last name...">
+                            <br>
+
+                            <label for="country">Country</label>
+                            <select id="country" style="width:100%;padding:5px;">
+                                <option>Australia</option>
+                                <option>India</option>
+                                <option>Canada</option>
+                                <option>France</option>
+
+                            </select>
+
+                            <label for="subject">Subject</label>
+                            <textarea id="subject" name="subject" style="" placeholder="Write something..."></textarea>
+
+                            <input type="submit" class="button" style="width:fit-content" value="Submit">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!--contact grid end-->
+        </div>
+        <!--Contact section end-->
+    </div>
+</body>
+
+</html>

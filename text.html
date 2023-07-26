@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" >
+    <style>
+        form{
+            border:2px solid #2d2d44;
+        }
+        .imageContainer{
+            text-align: center;
+            margin-top:20px;
+        }
+        .item{
+            padding: 10px;
+            margin-left: 5px;
+            margin-right:5px;
+            margin-top:5px;
+            margin-bottom:20px;
+            width: 100%;
+        }
+        #img{
+            width:200px;
+            height:200px;
+            border-radius: 50%;
+        }
+        .dropdown{
+            display:inline-block;
+            position:relative;
+        }
+        .dropdown-content{
+            position:absolute;
+            background-color:white;
+            display:none;
+           
+          
+        }
+        .dropdown:hover .dropdown-content{
+            display:block;
+           
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <form class="form" style="background-color: aquamarine;">
+    
+        <div class="imageContainer">
+            <img id="img" src="images/favicon.ico" style="align-content: center;">
+    
+        </div>
+        <div class="dropdown">
+        <label for="uname"><b>Username:</b></label>
+        <div class="dropdown-content">
+            <p>Home</p>
+            <P>About Us</P>
+        </div>
+        </div>
+        <input class="item" type ="text" name="uname" placeholder="Enter Username" required>
+        <br>
+
+        <label for="pass"><b>Password:</b></label>
+        <input class="item" type="password" name="pass" placeholder="Enter Password"  required>
+<br>
+
+
+        <input type="submit" value="Login">
+        
+    </form>
+</body>
+</html>

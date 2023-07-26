@@ -1,0 +1,182 @@
+*{
+    box-sizing: border-box;
+    margin:0px;
+}
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    margin:auto;
+    
+}
+.header{
+    padding:100px;
+    color: white;
+    text-align: center;
+    background-color: rgb(84, 189, 154);
+}
+h1{
+    font-size: 40px;
+    padding: 20px;
+}
+nav{
+    /* text-align: center; */
+    background-color: rgb(51, 48, 48);
+    overflow: hidden;
+
+}
+ 
+nav a:hover{
+    background-color: rgb(116, 121, 124);
+}
+ a{
+    /* float:left; */
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+}
+nav a#right{
+    float:right;
+}
+
+
+   .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  
+  .dropdown {
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1;}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+.row{
+    overflow: hidden;
+}
+.row img,
+    h3{
+        padding-top:10px;
+        padding-bottom: 10px;   
+    }
+
+.column{
+   
+    float:left;
+    width:25%;
+
+}
+.content, .column2{
+    padding: 15px;
+}
+.column2{
+    float:left;
+    width:75%;
+}
+.content{
+    background-color: #f1f1f1;
+}
+.content2 img{
+    height:200px;
+}
+h2{
+    padding-top:20px;
+    padding-bottom: 20px;
+}
+h2+p{
+    font-weight:bold;
+}
+h2+h3{
+    font-weight:normal;
+    color:#5e5a5a;
+}
+
+img{
+    width:100%;
+    height: 200px;
+}
+.intro{
+    text-align: center;
+    color:white;
+    padding: 50px;
+    background-color: rgba(68, 49, 68, 0.685);
+}
+.aboutRow::after{
+    content:"";
+display: table;
+clear:both;
+}
+.aboutColumn{
+    float:left;
+    width:33%;
+    padding:10px;
+}
+.aboutContent{
+    box-shadow: 1px 1px 15px grey;
+}
+.details{
+    padding: 10px;
+}
+.button{
+    color:white;
+    width: 100%;
+    border:black;
+    padding:5px;
+    background-color: black;
+}
+.contact{
+    border-radius: 5px;
+    margin:15px;
+    background-color: #f1f1f1;
+}
+.contactRow{
+    content:"";
+    display:table;
+    clear:both;
+    
+}
+.contactColumn{
+    padding:20px;
+    width:50%;
+    float:left;
+}
+input,textarea,select{
+    margin-top:5px;
+    margin-bottom:10px;
+    padding:10px;
+    width:100%;
+}
+@media screen and (max-width:600px){
+    .column{
+    width: 100%;
+    } 
+    .aboutColumn{
+        width:100%;
+    } 
+    .contactColumn{
+        width:100%;
+    }
+}
